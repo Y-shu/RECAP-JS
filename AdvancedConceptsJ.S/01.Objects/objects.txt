@@ -1,0 +1,42 @@
+1.Everything is an object
+2.In Javascript entire thing has been divided into two types :
+        a.primitives
+        Example:Numbers,Strings,Booleans,Undefined and Null.
+        b......other than everything is an object(non-primitives)
+        Example:Array,Functions,Obejcts,Dates,Wrapper for Numbers,Strings,Booleans
+3.Objects interact with one another through methods and properties.
+4.Objects are used to store data , structure applications into modules and keeping code clean.
+5.In many other languages objects are considered to be class but in Javascript objects are
+considered as constructor or a prototype..
+6.Based on constructor we can create as many as instances we want.Here constructor used
+as a blueprint from which we create instances.
+7.Javascript is prototype based language inheritance works by using something called prototype.
+8.Each and every object in Javascript has prototype property which makes inheritance possible
+in Javascript
+9.How a prototype works?
+Say suppose if we are having an object called person with some methods and properties.
+and we create n number of instances from person object. If one amoung the instances is 
+john then inorder to make use of properties and methods present in person object we take help of
+prototype. 
+When we inherit some thing from parents object/constructor every instances that was created from parent 
+object
+will be allocated memory for the properties that got inherited from parent object so inorder to avoid this
+problem in creating excess memory we define the parent object to prototype.
+
+Means instances can access properties and methods present in parent object/constructor but memory will 
+not be created.
+
+**WHAT EVER OBJECT THAT WE CREATED IS an instances of even bigger constructor called OBJECT constructor 
+OBJECT(prototype)-->hasOwnProperty(),isPrototypeOf(),constructor(),toString()...valueOf()...
+Each and every object that we create is the instance of the object constructor which has a bunch of methods 
+in its prototype property and the object which we create can inherit the methods in OBJECT prototype and 
+use them.
+
+all this together is called PROTOTYPE CHAIN...PROTOTYPE CHAIN MAKES inheritance POSSIBLE...
+
+null is the only that has no prototype.null is final in prototype chain..
+
+PROTOTYPE CHAIN works upwards... when ever we try to access any method it for checks in current object
+if it dont find it goes and check in parent main object....final it stops check when it reaches null...
+
+
