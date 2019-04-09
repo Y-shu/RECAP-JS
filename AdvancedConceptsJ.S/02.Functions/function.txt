@@ -1,0 +1,6 @@
+1.Functions are also objects.
+2.We can do same things that we can do with objects.
+3.Function is the instance of object type(function behavious like object).
+4.we can store functions in a variable.
+5.we can pass a function to another function as an argument.
+6.we can also return a function from a function.
