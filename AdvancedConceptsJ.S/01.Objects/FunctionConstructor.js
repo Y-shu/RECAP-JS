@@ -15,7 +15,8 @@ var Person = function(name,yearOfBirth,job){
 
 }
 //instantiating -- creating an instance for Person 
-var john = new ('john',1992,"teacher");
+var john = new Person('john',1992,"teacher");
+console.log(john); 
 /*
 1.what new operator does?--
 using new operatoe a brand new empty object is created then it calls already 
