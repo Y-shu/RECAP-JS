@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+    <title>DOM</title>
+    <script type="text/javascript">
+    /*Javascript adds functionality on the 
+    client side..
+    
+    ...EVENT is basically an activity
+    example clicking an event,Scrolling events
+    
+    ...these events can be mapped into javascript
+    and target these particular events to perform certain actions*/
+    function buttonAlert(){
+        //alert("Happy Day....!");
+        //here document is html document which is loaded into browser
+        //getElementById is a property of document object
+        //getElementById returns reference to first object(document)
+        //with specified value of ID or Name attribute
+        //heading2 is an attribute
+        //innerHtml is a  predefined property of h2 DOM object 
+        //innerHtml is actually holds the text content of that particular tag..
+        document.getElementById("heading2").innerHTML="Hello GoodDay!";
+    }
+    //buttonAlert();//we will not call here
+    //we target this js code when an event occured
+    </script>
+   
+    </head>
+    
+    <body>
+        
+        <button onclick="buttonAlert()">Click Me</button>
+        <h2 id="heading2">Some Random Text</h2>
+    </body>
+</html>

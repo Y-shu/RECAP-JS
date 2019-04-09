@@ -1,0 +1,35 @@
+<html>
+    <title>Regular Expressions</title>
+    <head>
+        <script type="text/javascript">
+            /*Regular expressions are used to perform powerful pattern -matching
+            and serach-and-replace functions on text*/
+
+            //regular expressions are treated as objects in javascript
+            function validate(){
+            var user=document.getElementById("uname").value;
+            //two ways to create regular expressions
+            var regx=/E00/;  //1st way 2 create regularexpressions
+
+            if(regx.test(user)){
+                //test method returns a boolean 
+                //it takes string value username and check for regularexpression
+                alert("Valid UserName!");
+                }else{
+                    alert("InValid UserName!");
+                }
+                }
+
+        </script>
+    </head>
+    <body>
+        <!--Here action is taken place when test method returns true value-->
+        <form action="mess.html">
+           <input id="uname" type="UserName" placeholder="UserName"/>
+           <label id="ulabel" style="color:red;visibility: hidden;">Invalid UserName</label>
+           <br>
+           <br>
+           <button onclick="validate()" type="submit">Submit</button>
+        </form>
+    </body>
+</html>

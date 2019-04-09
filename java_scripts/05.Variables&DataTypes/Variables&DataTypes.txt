@@ -1,0 +1,23 @@
+VARIABLES:
+//variable is nothing but a named storage 
+//once we create a variable this holds a particular 
+memory in RAM with some address which is basically a 
+//hexadecimal number
+//this stored variable can be referenced and manipulated
+//we can store any type of data to these variables
+
+DATA TYPES:
+1.Data types are of two types Primitive/Trivial(their value will not change)
+ and Composite/Non-Primitive(values will be changing)
+2.Primitive--->Number,String and Boolean
+  Trivial--->null and undefined.
+3.Non-Primitive--->Objects and Arrays.
+4.J.s is loosely typed/strictly typed programming language , as we need not define the data type
+during declaring variable like int x=5;
+5.J.s is dynamically typed as we assign a number to variable its datatype is changed 
+accordingly.Depending on the type of value , data type of variable changes
+
+RULES TO NAME A VARIABLES:
+1.Should not be a pre-defined keyword
+2.First character must be a letter, underscore and dollar sign.
+3.Variables are case sensitive.

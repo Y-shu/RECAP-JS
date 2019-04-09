@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Variables & DataTypes</title>
+        <script type="text/javascript">
+            //-------------Primitive Type----------------------
+            //J.s is loosly typed/strictly typed
+            //J.s is Dynamically typed
+        var num=16;
+        var str="Yashu";
+        var bool="false";
+
+        var x ;//declaration
+        x=5;//initialization
+        
+        document.writeln(num);
+        document.writeln(str);
+        document.writeln(bool);
+
+        //for primitive data types values will not change...
+        var a="prasanna";
+        var b=a;
+        document.writeln(a);//prasanna
+        a="Kumar";
+        document.writeln(b); //prasanna
+
+        var obj={
+            name:"yashu"
+        };
+        var obj1=obj;
+        document.writeln(obj.name);//yashu
+
+        document.writeln(obj1.name);//yashu
+
+        obj1.name="kavya";
+        document.writeln(obj.name);//kavya
+        document.writeln(obj1.name);//kavya
+
+
+        //example for J.S as Dynamically typed
+        var x="Yashu";
+        document.writeln(x);//Yashu
+        x=16;
+        document.writeln(x);//16
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

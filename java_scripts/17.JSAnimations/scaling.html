@@ -1,0 +1,51 @@
+
+<html>
+<head>
+<title>Animation Part-2 --Scaling</title>
+<script type="text/javascript">
+var width=100;
+var difference=2;
+var intervalID=0;
+function increase(){
+        /*CLEAR INTERVAL IS ONLY CALLED WHEN THE WIDTH REACHES 200..
+        so we use clearInterval even before we set timer using setTimeOut*/
+    clearInterval(intervalID);
+    intervalID=setInterval(zoomIn,20); // this id helps to set the timer for 20millisec and calls
+    //zoomIn
+}
+//zoomIn will be called after 20milliseconds
+function zoomIn(){
+    //it will be checked if width is less than 200 it increments 
+    if(width<200){
+        width=width+difference;
+        //setting the new width
+        document.getElementById("image1").style.width=width;
+
+    }else{
+        //we have to clear interval 
+        clearInterval(intervalID);//this to clear the timer
+        /*CLEAR INTERVAL IS ONLY CALLED WHEN THE WIDTH REACHES 200..
+        so we use clearInterval even before we set timer using setTimeOut*/
+    }
+}
+function decrease(){
+        /*CLEAR INTERVAL IS ONLY CALLED WHEN THE WIDTH REACHES 200..
+        so we use clearInterval even before we set timer using setTimeOut*/
+    clearInterval(intervalID);
+    intervalID=setInterval(zoomOut,20);
+}
+function zoomOut(){
+    if(width>100){
+        width=width-difference;
+        document.getElementById('image1').style.width=width;
+    }else{
+        clearInterval(intervalID);
+    }
+}
+</script>
+</head>
+<body>
+    <img id="image1" onmouseover="increase()" onmouseout="decrease()"  src="heart.jpg" width="100">
+
+</body>
+</html>

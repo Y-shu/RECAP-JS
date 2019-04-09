@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        //getElementByClassName is returing a group of class names
+        //which has the class of className
+
+        //difference between getElementByTagName is it returns all the elements
+        //with one tag name
+        //getElementByClassNAme can by applied to any element like div,anchor,div..etc
+        function changeStyling(){
+            var smile=document.getElementsByClassName("mystyle");
+            for(var x=0;x<smile.length;x++){
+                smile[x].style.color="red";
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+    <!--class is the attribute of element-->
+    <!--Main difference between id and class attribute is 
+    id can be applied to one particular html tag or html element class
+can be used to manipulate multiple tags-->
+<!--Id has to be unique-->
+<p class="mystyle">Hey</p>
+<p>Hello</p>
+<p class="mystyle">Good Morning</p>
+<p>Good Day</p>
+<a class="mystyle" href="#">This is the Anchor</a>
+<p>Good Bye!</p>
+
+<br>
+<br>
+<button onclick="changeStyling()">ClickMe!</button>
+
+</body>
+</html>
