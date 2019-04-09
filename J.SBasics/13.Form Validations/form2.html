@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function validatemyform(){
+              var uname=document.getElementById("uname");
+              var pass=document.getElementById("pass");
+
+              if(uname.value.trim()==""){
+                  alert("User Name cannot be Empty");
+                  uname.style.border="solid 3px red";
+                  document.getElementById("lbluser").style.visibility="visible";
+                  return false; // so that it will not be redirected to another page
+              }else if(pass.value.trim()==""){
+                alert("Password cannot be Empty");
+                pass.style.border="solid 3px red";
+                document.getElementById("inpass").style.visibility="visible";
+                return false;
+              }else if(pass.value.trim().length<5){
+                  alert("Password is too short!");
+                  pass.style.border="solid 3px red";
+                  document.getElementById("inpass").style.visibility="visible";
+                  return false;
+              }else{
+                  return true;
+              }
+        }
+        </script>
+    </head>
+    <body>
+        <form onsubmit=" return validatemyform()" action="message.html">
+            <input id="uname" type="text" placeholder="UserName">
+            <label id="lbluser" style="color:red;visibility: hidden;">Invalid UserName</label>
+            <br>
+            <br>
+            <input id="pass" type="password" placeholder="Password">
+            <label id="inpass" style="color:red;visibility: hidden;">Invalid Password</label>
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+    </body>
+</html>

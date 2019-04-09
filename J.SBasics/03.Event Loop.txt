@@ -1,0 +1,40 @@
+EVENT LOOP
+1. Node js is an asynchronous, single threaded and event driven 
+2. Event loop mechanism which is efficient which helps node js be a 
+   single threaded application.
+•	call stack
+•	API’s (web)
+•	Event loop
+**call stack is the structure in the memory where we currently executing code 
+**API’s are nothing but browser (where we offload some of the work by nodejs)….
+  this particular part deals with handling left over works like set time out 
+  [nodejs comes with some c++ apis  which interact with OS)
+  API’s are mechanism provided by browser to handle certain portion of code
+**Event loop is like FIFO used by nodejs to list all tasks. When call stack
+ is empty , event loop is going to throw tasks into call stack where task is 
+ supposed to get executed.
+ 
+ Q1. What is Node.js? What is it used for?
+
+Node.js is a run-time JavaScript environment built on top of Chrome’s V8 engine.
+ It uses an event-driven, non-blocking I/O model.
+ It is lightweight and so efficient. Node.js has a package ecosystem called npm.
+ 
+ Q2. What is Event-driven programming?
+     **app is based on and respond to events 
+	 **events like keypress
+ Q3. What is Event loop in Node.js work? And How does it work?
+     
+	 **Event loop handles all async call backs
+	 ** all the callback functions are queued in an loop, and 
+	    will run one-by-one when the response has been received.
+		 
+  Q4.timers in nodejs?
+     **these functions execute code after a set period of time
+	 **nodejs timer provides setTimeOut(),setImmediate() and setInterval
+	 
+  Q5.crypto in nodejs?
+    module in nodejs which provides cryptographic functionality that includes set of wrappers.
+	
+
+	 

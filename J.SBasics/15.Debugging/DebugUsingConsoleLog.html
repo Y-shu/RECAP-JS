@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function addition(){
+            var val1=document.getElementById('value1').value;
+            var val2=document.getElementById('value2').value;
+            // document.getElementById('op').innerHTML="Result= "+(val1 + val2);
+            console.log(val1+val2);
+        }
+        </script>
+    </head>
+    <body>
+        <input id="value1" type="text" placeholder="value1"><br><br>
+        <input id="value2" type="text" placeholder="Value2"><br><br>
+        <button id="btnadd" onclick="addition()" type="button">Add</button>
+        <h2  id="op">Result=</h2>
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        /*
+        \d-match any digit (equal to [0-9])
+        \w-match any word character  (a-z,A-Z,0-9 & _)
+        \s-match whitespace character (eg-spaces & tabs
+        \t-match a tab only*/
+        function validatePhoneNumber(){
+            var pnumber=document.getElementById('phonenumber').value;
+            //{} this indicate how many times that particular
+            //expression has to repeat 
+            //in the below example \d has to be repeated 9 times
+            //^ and $ denotes the limits of pattern
+            var regx=/^[7-9]\d{9}$/;
+            if(regx.test(pnumber)){
+                document.getElementById('plabel').innerHTML='Valid';
+
+                document.getElementById('plabel').style.visibility='visible';
+                document.getElementById('plabel').style.color='green';
+            }else{
+                document.getElementById('plabel').innerHTML='Invalid';
+                document.getElementById('plabel').style.visibility='visible';
+                document.getElementById('plabel').style.color='red';
+            }
+        }
+
+        </script>
+    </head>
+    <body>
+        <form>
+            <input id="phonenumber" placeholder="CellPhone" type="text">
+            <label id="plabel" style="color:red;visibility: hidden">Invalid!</label>
+            <br>
+            <br>
+            <button onclick="validatePhoneNumber()"type="button">Submit</button>
+        </form>
+
+    </body>
+</html>

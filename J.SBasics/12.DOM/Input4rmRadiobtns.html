@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        function display(){
+            var rbutton1 = document.getElementById('rd1');
+            var rbutton2 = document.getElementById('rd2');
+
+            if(rbutton1.checked==true)
+            //this value attaribute is equal to the value attribute 
+            //inside input element...
+                alert(rbutton1.value);
+            else if(rbutton2.checked==true)
+                alert(rbutton2.value);
+                else
+                alert("You didn't select anything!");
+            }
+
+           
+        
+            </script>
+    </head>
+    <body>
+        <input id="rd1" name="grp1"type="radio" value="Full Stack">Full Stack</input>
+        <input id="rd2" name="grp1"type="radio" value="Devops">Devops</input>
+        <button id="btn" onclick="display()">Click Me</button>
+
+
+    </body>
+</html>

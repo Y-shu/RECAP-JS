@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>DOM Manipulations</title>
+<script type="text/javascript">
+function fun1(){
+    var select=document.getElementById('selectbox');
+    //options and selectedIndex are properties of select variables...
+    alert(select.options[select.selectedIndex].value);
+}
+</script>
+</head>
+<body>
+<select id="selectbox">
+<option value="FullStack">FullStack</option>
+<option value="Devops">Devops</option>
+<option value="Aws">Aws</option>
+<option value="RPA">RPA</option>
+</select>
+<button onclick="fun1()">ClickMe</button>
+</body>
+</html>

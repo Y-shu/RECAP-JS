@@ -1,0 +1,46 @@
+<html>
+   <head>
+       <script type="text/javascript">
+       function valiadation(){
+           var uname=document.getElementById("username");
+           var pass=document.getElementById("password");
+           // || is 'or' a  conditional operator
+           //trim() method just removes spaces in user and password fields..
+           if(uname.value.trim()=='' || pass.value.trim()==''){
+              alert("No Blank Values are Allowed!");
+              return false;
+           }else{
+               true;
+           }
+       }
+       </script>
+   </head> 
+   <body>
+       <!--When ever we want to submit any data ecspecially it is used
+    when we are going to send data to backend-->
+    <!--inorder to redirect to another page after hitting submit button 
+    we place validation functionality in form tag-->
+    <!--action attribute is to redirect
+    we cannot use our functionality in button instead we should
+use it in form tag...-->
+
+<!--here in form tag return keyword inside onsubmit
+means our method validation is going to return a value which can be true
+or false.if it returns false value it supposed to print alert message-->
+
+<!--if it is false this particular form will not be submitted and we
+will be on the same page...if true form will be submitted and you will
+be redirected to the required page...-->
+       <form onsubmit=" return validation()" action="message.html">
+           <input id="username"type="text" placeholder="username">
+           <br>
+           <br>
+           <input id="password" type="password" placeholder="password">
+           <br>
+           <br>
+           <button type="submit">Submit</button>
+
+
+       </form>
+   </body>
+</html>

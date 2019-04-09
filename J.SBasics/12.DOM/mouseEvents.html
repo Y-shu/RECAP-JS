@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>MouseOver and MouseOut</title>
+        <script tyep="text/javascript">
+        // MouseOver and MouseOut
+        function setNewImage(){
+            document.getElementById("img1").src="bluesea.jpg";
+        }
+        function setOldImage(){
+            document.getElementById('img1').src="testingimage.jpg";
+        }
+
+        </script>
+    </head>
+    <body>
+        <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()"
+        src="testingimage.jpg" width="300"/>
+    </body>
+</html>

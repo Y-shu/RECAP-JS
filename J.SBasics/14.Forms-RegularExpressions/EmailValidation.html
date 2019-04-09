@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        /*Email Validation
+        (yourname)@(domain).(extension).(.extention)*/
+        function emailValidation(){
+            var ename=document.getElementById('Email').value;
+            //+ here indicates minimum of 1 charcter or more than one
+            //{min,max}
+            //? is for optional
+            var regx=/^([a-z0-9\.-]+)@([a-z0-9-]).([a-z]{3,8})(.[a-z]{2,8})?$/;
+            if(regx.test(ename)){
+                
+             document.getElementById('elabel').innerHTML='Valid';
+             document.getElementById('elabel').style.visibility='Visible';
+             document.getElementById('elabel').style.color='green';
+            }else{
+             document.getElementById('elabel').innerHTML='Invalid';
+             document.getElementById('elabel').style.visibility='Visible';
+             document.getElementById('elabel').style.color='red';
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <form>
+            <input id='Email' type="email" placeholder="Email">
+            <label id='elabel'style="color:red;visibility:hidden">Invalid!</label>
+            <br>
+            <br>
+            <button onclick="emailValidation()"type="button">Submit</button>
+        </form>
+
+    </body>
+</html>

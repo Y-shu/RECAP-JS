@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GetElementByTagName</title>
+    <script type="text/javascript">
+    //getElementbyId works for one particular elements
+    //getElementbyTagName works for a group of elements
+    function display(){
+        //here para is a collection of html elements in an array format
+
+        var para=document.getElementsByTagName("p");
+        //this getElementByTagNAme method consists of 
+        //css attribute style using which we can change the style
+        //of elements
+        para[0].style.color="red";
+        para[1].style.color="blue";
+        para[2].style.color="brown";
+        para[3].style.color="violet";
+        para[4].style.fontStyle="italic";
+        para[4].style.color="orange";
+        
+        for(var i=0;i<para.length;i++){
+        para[i].style.color='green';
+    }
+    
+    }
+
+    // for(var i=0;i<para.length;i++){
+    //     para[i].style.fontSize=22;
+    // }
+    
+    //javascript can be used to take input from users,to perform animations
+    //performs dom manipulations...etc
+    </script>
+</head>
+<body>
+    <p>Hello</p> 
+    <p>Hey</p>    
+    <p>GoodMorning</p>    
+    <p>Have a Nice Day</p>    
+    <p>Bye!</p>    
+    <br>
+    <button onclick="display()">ClickMe!</button>
+
+</body>
+</html>
