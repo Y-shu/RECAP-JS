@@ -1,11 +1,18 @@
-//creating an object in javascript has many ways out of which 
+//creating an object in javascript has 3 ways out of which 
 //function constructor way of creating an object is popular one
 
+//Normal way of creating an object
 var john={
     name:"john",
     yearOfBirth:1992,
     job:"teacher"
 }
+console.log( john.name );
+console.log( john.yearOfBirth );
+console.log( john.job );
+
+
+
 //function constructor
 var Person = function(name,yearOfBirth,job){
     //this keyword is also an object
