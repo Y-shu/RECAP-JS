@@ -13,8 +13,6 @@ var person={
     getFullDetails:function(){
         document.write("<h3>"+this.firstName+ " "+this.lastName+"</h3>" ); 
         // this refers to this particular object
-        
-        
     }
 }
 person.getFullDetails(); //function call

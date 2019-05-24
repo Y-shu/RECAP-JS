@@ -18,6 +18,8 @@ var y = x; // created new reference to same object
 console.log(y.name);//smily
 y.name="Kittu";
 console.log(y.name);//kittu
+console.log(x.name);//kittu
+
 
 //NOTE:In functions also same thing applies..
 var w=4;
