@@ -1,7 +1,7 @@
 //named/anonymous function expression difference??
 
 //Answer: how we call them is same but difference lies in
-//how browser loads them intp the execution context
+//how browser loads them into the execution context
 
 //1.Function declarations load before any code is executed--Hoisting
 //2.Function expressions load only when the interpreter reaches that line of code

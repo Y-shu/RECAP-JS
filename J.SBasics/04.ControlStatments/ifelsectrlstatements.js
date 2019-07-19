@@ -44,4 +44,27 @@ if(p>0 && p%2==0){
 }else{
     document.write("<h3>" +p+ " didn't satisfied the condition!");
 }
+// using logical operator like !NOT
+var l=true;
+if(!l==true){
+    document.write("<h1>"+l+"</h1>");
+}else{
+    document.write("<h1>eee!</h1>");
+}
+// using logical operator like || OR
+var my_color="blue";
+var ur_color="black";
+if(my_color=="pinky"||ur_color=="red"){
+    document.write("<h1>"+my_color+"</h1>");
+}else{
+    document.write("<h1>"+ur_color+"</h1>");
+}
+// conditional operator
 
+// variable name = (condition)?"value1":"value2"
+var he_is =("age"<18)? "he is a minor":"he is a major"
+document.write("<h1>"+he_is+"</h1>");
+
+var yashu = ("age">25 && "yashu.length"==5)?"true":"false"
+document.write("<h1>"+yashu+"</h1>");
+document.write("<h1>"+yashu.length+"</h1>");

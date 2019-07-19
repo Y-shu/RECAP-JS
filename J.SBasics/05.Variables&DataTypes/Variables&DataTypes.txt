@@ -12,7 +12,7 @@ DATA TYPES:
 2.Primitive--->Number,String and Boolean
   Trivial--->null and undefined.
 3.Non-Primitive--->Objects and Arrays.
-4.J.s is loosely typed/strictly typed programming language , as we need not define the data type
+4.J.s is loosely typed programming language , as we need not define the data type
 during declaring variable like int x=5;
 5.J.s is dynamically typed as we assign a number to variable its datatype is changed 
 accordingly.Depending on the type of value , data type of variable changes
