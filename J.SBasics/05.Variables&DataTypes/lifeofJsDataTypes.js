@@ -1,4 +1,9 @@
 //each variable holds its own copy of data it won't refere to anything...
+// non-primitives are mutable(which can be changed and holds the differences) and primitives
+// are immutable
+// primitives-string,number,boolean,null,undefined,symbol
+
+// non-primitives-object and arrays
 var a = "Yashu";
 var b = a;
 document.writeln(a);//Yashu

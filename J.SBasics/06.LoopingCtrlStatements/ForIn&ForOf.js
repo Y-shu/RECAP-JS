@@ -46,3 +46,7 @@ for (const x of myarray){
 }
 
 
+/**
+ * forEach-is only Arrays
+ * forIn-is only Objects
+ * forOf is ESC6 which is flexiable enough to use anywhere we want... */ 

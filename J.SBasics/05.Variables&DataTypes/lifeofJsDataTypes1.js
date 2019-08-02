@@ -7,8 +7,13 @@
 // console.log(this); // prints a window object
 
 //Javascript will readily coerce between primitives and objects
+/* WRAPPER OBJECTS: whenever you try to access a property of a 
+string str, JavaScript coerces the string value to an object, 
+by new String(str). This object is called a wrapper object. 
+It inherits all string methods, and is used to resolve the 
+property reference. Once the property has been resolved, 
+the wrapper object is discarded.*/
 
-//for example for string value is coerced to a string object 
 
 String.prototype.returnMe=function(){
     return this;
