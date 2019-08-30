@@ -14,6 +14,7 @@ var personProto = {
     }
 };
 var john = Object.create(personProto);
+console.log(john);//we are creating a john object
 john.name='john';
 john.yearOfBirth=1992;
 john.job='teacher';

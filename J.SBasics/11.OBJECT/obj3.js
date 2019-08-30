@@ -29,13 +29,18 @@ console.log(b===a); // true
 // --------------------------------------------------------------------
 
 // CONSTANT 
-// An object declared as const can be changed.
+// An object declared as const cannot be changed.
 const User1={
     name:"Gopi"
 };
 User1.age=26;
-console.log(User1);
+User1.name="yashu";
+console.log("my name is :"+User1.name);
+
 // we can add something with is already exisiting object but we cannot rewrite it when declared constant
+// const v=30;
+// const v=40;
+// console.log(v);// redeclaration and re initilization is not possible 
 
 //with "var" we can redeclare
 var x={
@@ -52,10 +57,10 @@ let w={
     name:"kiran"
 }
 console.log(w);//kiran
-let w={
+let s={
     name:"nimrah"
 }
-console.log(w);// error
+console.log(s);// error
 
 
 

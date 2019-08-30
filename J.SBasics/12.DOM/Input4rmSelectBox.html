@@ -5,7 +5,13 @@
 function fun1(){
     var select=document.getElementById('selectbox');
     //options and selectedIndex are properties of select variables...
+    // whenever you try to access a property of a string str, JavaScript 
+    // coerces the string value to an object, by new String(str). This object is called a wrapper object. It inherits all string methods, and is used to resolve the property reference. Once the property has been resolved, the wrapper object is discarded.
     alert(select.options[select.selectedIndex].value);
+    // console.log(select.selectedIndex);//2
+    // console.log(select.options[2].value);//aws
+    
+    
 }
 </script>
 </head>

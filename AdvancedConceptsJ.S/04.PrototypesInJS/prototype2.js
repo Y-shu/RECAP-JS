@@ -12,7 +12,7 @@ var proto = foo.prototype;
 console.log(proto);//constructor
 console.log(proto.constructor);//function
 var a = new foo();
-//what was the functio which created a particular object??
+//what was the function which created a particular object??
 //object.__proto__.constructor
 
 console.log(a.__proto__.constructor);//foo

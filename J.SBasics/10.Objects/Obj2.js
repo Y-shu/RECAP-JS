@@ -30,7 +30,7 @@ delete Food.food_price;
 
 document.write("<h2>"+Food.food_price+"</h2>");//undefined
 
-/*Boolean,Number and String can also be an objects
+/*Boolean,Number and String can also be an objects(wrapper object)
 when they are defined by using new keyword
 
 ...dates are objects

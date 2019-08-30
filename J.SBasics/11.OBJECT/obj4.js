@@ -7,9 +7,11 @@ var admin={};
 for (var key in user){
     admin[key]=user[key];
 }
-console.log(admin);
+console.log(admin);//Asus
 admin.name="Lenovo";
-console.log(admin);
+console.log(admin);//lenovo
+
+
 
 // MERGING
 var usr={
