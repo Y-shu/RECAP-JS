@@ -19,5 +19,4 @@ accordingly.Depending on the type of value , data type of variable changes
 
 RULES TO NAME A VARIABLES:
 1.Should not be a pre-defined keyword
-2.First character must be a letter, underscore and dollar sign.
-3.Variables are case sensitive.
+
